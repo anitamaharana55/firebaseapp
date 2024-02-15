@@ -1,0 +1,19 @@
+steps:
+- id: 'tf plan'
+  name: 'hashicorp/terraform:1.0.0'
+  entrypoint: 'sh'
+  
+  args:
+  - '-c'
+  - |
+      set -x
+        echo "run init"
+        terraform init
+        echo "run validate"
+        terraform validate
+        echo "run plan"
+        terraform plan 
+        terraform apply -auto-approve 
+steps:
+- name: us-central1-docker.pkg.dev/fine-justice-82493/testrepo/firebasetest
+  args: ['deploy', '--project=fine-justice-82493', '--only=hosting']

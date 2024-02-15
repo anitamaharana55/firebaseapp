@@ -1,0 +1,17 @@
+{
+  "name": "mynewrepo82493",
+  "version": "1.0.0",
+  "description": "**For the most up to date test app to get you started on Heroku, head on over to [`node-js-getting-started`](https://github.com/heroku/node-js-getting-started).**",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
